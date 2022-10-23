@@ -1,0 +1,161 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    opacity: 0.94;
+    font-family: "Nunito",sans-serif;
+    background-image: url(./img/world1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ 
+ .containrt {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+ #icon{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 270px;
+   
+}
+
+ .input {
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+  }
+
+ input[type="submit"] {
+    padding: 15px 30px;
+    background-color: #82a9c9;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+ #input_text[type="text"] {
+    width: 600px;
+    height: 55px;
+    padding: 5px 10px;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+  }
+ input[type="submit"]:hover {
+    box-shadow: 3px 3px 2px 1px rgb(31, 3, 83);
+  }
+
+ #card {
+    width: 50%;
+    background: #5e68f3;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+
+ #card h1 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 50px;
+  }
+
+ p {
+    text-align: center;
+    margin: 30px 0;
+    font-size:20px;
+    padding: 0;
+  }
+ #temp {
+   margin-top: 5px;
+ }
+
+@-webkit-keyframes spin2 {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin2 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ #firstLoader {
+    position: relative;
+    margin-left: 48%;
+    margin-top: 100px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #000000;
+    border-radius: 50%;
+    border-top: 10px solid #6ea7f3;
+    -webkit-animation: spin2 2s linear infinite;
+    animation: spin2 2s linear infinite;
+  }
+@media only screen and (max-width:450px) {
+ body {
+    background-size:cover;
+    background-repeat:round no-repeat;
+    background-color:#97b0f3 ;
+    background-image: radial-gradient(#313b55, #41529c, #9c76cc);
+    margin: 0;
+  }
+
+ #input_text[type="text"] {
+    width: 90%;
+    margin: auto;
+  }
+
+ input[type="submit"] {
+    width: 45%;
+    height: 50px;
+    margin: auto;
+    display: block;
+    margin-top:20px;
+  }
+
+ #card {
+    margin-left: 24%;
+    margin-top: 80px;
+    margin-bottom: 40%;
+  }
+
+#card h1 {
+    font-size: 35px;
+  }
+#temp {
+    margin: auto;
+ }
+
+#icon {
+    margin: auto;
+    margin-left: 23%;
+  }
+
+#firstLoader {
+    margin-left: 40%;
+    margin-top: 70%;
+    margin-bottom: 37%;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    border: 10px solid #000000;
+    border-radius: 50%;
+    border-top: 10px solid #6ea7f3;
+  }
+}
